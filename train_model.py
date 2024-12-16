@@ -26,9 +26,11 @@ def train(args):
             Activation("relu"),
             MaxPooling2D(pool_size=(2, 2)),
             Dropout(0.5),
+            
             Flatten(),
             Dense(128),
             Activation("relu"),
+
             Dropout(0.5),
             Dense(10),
         ]
